@@ -58,7 +58,7 @@ export const StyledShoppingCart = styled.form`
   .cart-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-
+justify-items:center;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -73,9 +73,10 @@ export const StyledShoppingCart = styled.form`
     margin-top: 15px;
     margin-bottom: 15px;
     background-color:white;
+    max-width:100px;
   }
   .item-img {
-    width:100%;
+    max-width:90px;
   }
   .item-details {
     padding-left: 6px;
