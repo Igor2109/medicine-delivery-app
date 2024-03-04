@@ -20,7 +20,7 @@ export const StyledShoppingCart = styled.form`
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 15px;
+    padding: 15px 34px;
     gap: 35px;
     border: 2px solid black;
     margin-left: 15px;
@@ -31,6 +31,7 @@ export const StyledShoppingCart = styled.form`
   @media (min-width: 320px) and (max-width: 767px) {
     .left {
       margin-left: 0;
+      padding: 15px;
     }
   }
 
@@ -72,12 +73,18 @@ export const StyledShoppingCart = styled.form`
     }
   }
 
-
   @media (min-width: 1024px) and (max-width: 1440px) {
     .cart-input {
       width: 460px;
     }
   }
+
+  @media (min-width: 1024px) and (max-width: 1350px) {
+    .cart-input {
+      width: 565px;
+    }
+  }
+
   @media (min-width: 1440px) {
     .cart-input {
       width: 660px;
