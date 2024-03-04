@@ -72,15 +72,15 @@ export const StyledShoppingCart = styled.form`
     }
   }
 
+
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .cart-input {
+      width: 460px;
+    }
+  }
   @media (min-width: 1440px) {
     .cart-input {
       width: 660px;
-    }
-  }
-
-  @media (min-width: 1024px) and (max-width: 1439px) {
-    .cart-input {
-      width: 460px;
     }
   }
 
