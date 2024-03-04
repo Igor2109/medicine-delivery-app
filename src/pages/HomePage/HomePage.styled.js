@@ -46,6 +46,12 @@ export const StyledHomePage = styled.div`
     justify-content: center;
     margin-top: 15px;
   }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .empty-cart {
+      font-size: 15px;
+    }
+  }
+
   .medicines-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
