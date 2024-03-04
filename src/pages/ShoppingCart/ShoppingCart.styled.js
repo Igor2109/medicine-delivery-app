@@ -72,6 +72,11 @@ export const StyledShoppingCart = styled.form`
       width: 90vw;
     }
   }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .cart-input {
+      width: 280px;
+    }
+  }
 
   @media (min-width: 1024px) and (max-width: 1440px) {
     .cart-input {
@@ -79,7 +84,7 @@ export const StyledShoppingCart = styled.form`
     }
   }
 
-  @media (min-width: 1024px) and (max-width: 1350px) {
+  @media (min-width: 1025px) and (max-width: 1350px) {
     .cart-input {
       width: 565px;
     }
@@ -162,6 +167,7 @@ export const StyledShoppingCart = styled.form`
     align-items: center;
     padding: 0 15px;
     gap: 10px;
+    margin-bottom: 20px;
   }
   .total {
     color: red;
