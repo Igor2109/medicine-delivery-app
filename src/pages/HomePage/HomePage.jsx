@@ -57,7 +57,7 @@ const HomePage = () => {
       <div className="right">
         {isLoadingMedicines && <p>Loadings...</p>}
         {medicines.length === 0 && !isLoadingMedicines && (
-          <p>You need to select Pharmacy Shop</p>
+          <p className='empty-cart' >You need to select Pharmacy Shop</p>
         )}
         <ul className="medicines-list">
           {medicines.map(medicine => (

@@ -4,11 +4,13 @@ export const StyledHomePage = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding: 0 15px;
+  padding: 15px;
   .left {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px solid black;
+    padding-top: 15px;
   }
   .left-title {
     margin-bottom: 10px;
@@ -36,6 +38,13 @@ export const StyledHomePage = styled.div`
     transition: all 0.3s ease-in-out;
   }
   .right {
+    border: 2px solid black;
+  }
+  .empty-cart {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
   }
   .medicines-list {
     display: grid;
