@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledHomePage = styled.div`
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 0 15px;
   .left {
@@ -12,6 +12,7 @@ export const StyledHomePage = styled.div`
   }
   .left-title {
     margin-bottom: 10px;
+    font-size: 20px;
   }
   .shops-list {
   }
@@ -20,9 +21,19 @@ export const StyledHomePage = styled.div`
   }
   .list-item-btn {
     border: none;
-    background-color: burlywood;
+    background-color: beige;
     padding: 8px 6px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: all 250ms ease-in;
+  }
+
+  .list-item-btn:hover {
+    transform: scale(1.1);
+    border-color: blanchedalmond;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 14px 38px,
+      rgba(0, 0, 0, 0.22) 0px 10px 30px;
+    transition: all 0.3s ease-in-out;
   }
   .right {
   }
@@ -37,11 +48,25 @@ export const StyledHomePage = styled.div`
     align-items: center;
     gap: 10px;
   }
+
+  .medicine-title {
+    padding: 4px 0;
+  }
   .add-to-cart-btn {
     border: none;
-    background-color: burlywood;
+    background-color: beige;
     padding: 8px 6px;
     border-radius: 10px;
-    width: 120px;
+    width: 90%;
+    cursor: pointer;
+    transition: all 250ms ease-in;
+  }
+
+  .add-to-cart-btn:hover {
+    transform: scale(1.1);
+    border-color: blanchedalmond;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 14px 38px,
+      rgba(0, 0, 0, 0.22) 0px 10px 30px;
+    transition: all 0.3s ease-in-out;
   }
 `;

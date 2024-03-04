@@ -7,8 +7,12 @@ export const StyledHeader = styled.header`
   background-color: gray;
   gap: 25px;
   margin-bottom: 30px;
+  border: 2px solid blanchedalmond;
+  border-radius:6px;
+  
   .header {
     color: black;
+    
   }
   .header-link {
     text-decoration: none;
@@ -22,7 +26,8 @@ export const StyledHeader = styled.header`
     &.active {
       background-color: #fff;
       color: #000;
-      border-radius: 10px;
+      border-radius: 6px;
+      padding: 2px 4px;
     }
   }
 `;

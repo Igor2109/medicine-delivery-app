@@ -6,10 +6,10 @@ import { StyledHeader } from './Header.styled';
 const Header = () => {
   return (
     <StyledHeader>
-      <NavLink class="header-link link" to={HOME_ROUTE}>
+      <NavLink className="header-link " to={HOME_ROUTE}>
         Shop
       </NavLink>
-      <NavLink class="header-link link" to={SHOPPING_CART_ROUTE}>
+      <NavLink className="header-link " to={SHOPPING_CART_ROUTE}>
         Shopping Cart
       </NavLink>
     </StyledHeader>
