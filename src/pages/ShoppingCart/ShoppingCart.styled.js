@@ -25,7 +25,7 @@ export const StyledShoppingCart = styled.form`
     border: 2px solid black;
     margin-left: 15px;
     background-color: black;
-    max-height: 425px;
+    /* max-height: 425px; */
   }
 
   @media (min-width: 320px) and (max-width: 767px) {
@@ -44,7 +44,7 @@ export const StyledShoppingCart = styled.form`
   }
   .cart-input {
     border-radius: 10px;
-    width: 240px;
+    width: 340px;
     padding: 4px 8px;
     cursor: pointer;
 
@@ -66,6 +66,24 @@ export const StyledShoppingCart = styled.form`
     transform: scale(1.1);
   }
 
+  @media (min-width: 320px) and (max-width: 767px) {
+    .cart-input {
+      width: 90vw;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .cart-input {
+      width: 660px;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    .cart-input {
+      width: 460px;
+    }
+  }
+
   .right {
     grid-area: right;
     margin-right: 15px;
@@ -74,7 +92,7 @@ export const StyledShoppingCart = styled.form`
 
   @media (min-width: 320px) and (max-width: 767px) {
     .right {
-      margin-right:0;
+      margin-right: 0;
     }
   }
 
@@ -159,13 +177,4 @@ export const StyledShoppingCart = styled.form`
       rgba(0, 0, 0, 0.22) 0px 10px 30px;
     transition: all 0.3s ease-in-out;
   }
-  /* @media (min-width: 1440px) {
-      width: 1008px;
-      padding: 32px 24px;
-    } */
-
-  /* @media (min-width: 768px) and (max-width: 1439px) {
-      width: 704px;
-      padding: 32px 24px;
-    } */
 `;
