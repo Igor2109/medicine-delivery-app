@@ -118,6 +118,7 @@ export const StyledShoppingCart = styled.form`
     font-size: 26px;
   }
   .submit-btn {
+    color: red;
     border: none;
     background-color: beige;
     padding: 8px 6px;
