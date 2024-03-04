@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "./static/css/main.b89d895e.css",
-    "main.js": "./static/js/main.3d891ddd.js",
+    "main.js": "./static/js/main.b1a9423d.js",
     "static/media/isometric-gastroenterology-composition-with-view-medication-with-tubes-pills-illustration_1284-63536.avif": "./static/media/isometric-gastroenterology-composition-with-view-medication-with-tubes-pills-illustration_1284-63536.c1de44c0534fd9ce79f4.avif",
     "index.html": "./index.html",
     "main.b89d895e.css.map": "./static/css/main.b89d895e.css.map",
-    "main.3d891ddd.js.map": "./static/js/main.3d891ddd.js.map"
+    "main.b1a9423d.js.map": "./static/js/main.b1a9423d.js.map"
   },
   "entrypoints": [
     "static/css/main.b89d895e.css",
-    "static/js/main.3d891ddd.js"
+    "static/js/main.b1a9423d.js"
   ]
 }
