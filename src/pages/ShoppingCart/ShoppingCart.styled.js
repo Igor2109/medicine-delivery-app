@@ -5,8 +5,16 @@ export const StyledShoppingCart = styled.form`
   grid-template-areas:
     'left right'
     'bottom bottom';
-  gap: 20px;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  @media (min-width: 320px) and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    .left {
+      margin-left: 0;
+    }
+  }
+
   .left {
     grid-area: left;
     display: flex;
@@ -17,7 +25,15 @@ export const StyledShoppingCart = styled.form`
     border: 2px solid black;
     margin-left: 15px;
     background-color: black;
+    max-height: 425px;
   }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    .left {
+      margin-left: 0;
+    }
+  }
+
   .cart-label {
     display: flex;
     flex-direction: column;
@@ -55,10 +71,17 @@ export const StyledShoppingCart = styled.form`
     margin-right: 15px;
     border: 2px solid black;
   }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    .right {
+      margin-right:0;
+    }
+  }
+
   .cart-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-justify-items:center;
+    justify-items: center;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -66,17 +89,17 @@ justify-items:center;
   }
   .cart-list-item {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: flex-start;
     position: relative;
     border: 2px solid black;
     margin-top: 15px;
     margin-bottom: 15px;
-    background-color:white;
-    max-width:100px;
+    background-color: white;
+    max-width: 100px;
   }
   .item-img {
-    max-width:90px;
+    max-width: 90px;
   }
   .item-details {
     padding-left: 6px;
@@ -84,15 +107,16 @@ justify-items:center;
   .product-name {
   }
   .close-cart-btn {
-    position:absolute;
-    border:none;
-    background-color:transparent;
-    width:15px;
-    height:15px;
-    top:6px;
-    right:6px;
-    cursor:pointer;
-  } .product-price {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+  }
+  .product-price {
     padding: 2px 0;
   }
   .item-count-wrapper {
@@ -102,9 +126,9 @@ justify-items:center;
     padding: 0 4px;
   }
   .count-increase-btn {
-    border:none;
-    background-color:transparent;
-    cursor:pointer;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
   }
   .bottom {
     grid-area: bottom;
@@ -135,4 +159,13 @@ justify-items:center;
       rgba(0, 0, 0, 0.22) 0px 10px 30px;
     transition: all 0.3s ease-in-out;
   }
+  /* @media (min-width: 1440px) {
+      width: 1008px;
+      padding: 32px 24px;
+    } */
+
+  /* @media (min-width: 768px) and (max-width: 1439px) {
+      width: 704px;
+      padding: 32px 24px;
+    } */
 `;

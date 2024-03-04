@@ -14,7 +14,7 @@ export const App = () => {
     }, [dispatch]);
 
   return (
-    <div>
+    <>
       <Header />
       <main>
         <Routes>
@@ -22,6 +22,6 @@ export const App = () => {
           <Route path={SHOPPING_CART_ROUTE} element={<ShoppingCart />} />
         </Routes>
       </main>
-    </div>
+   </>
   );
 };

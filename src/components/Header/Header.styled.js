@@ -8,11 +8,12 @@ export const StyledHeader = styled.header`
   gap: 25px;
   margin-bottom: 30px;
   border: 2px solid blanchedalmond;
-  border-radius:6px;
-  
+  border-radius:6px;  
+ 
+
   .header {
-    color: black;
-    
+    color: black; 
+
   }
   .header-link {
     text-decoration: none;
